@@ -1,0 +1,25 @@
+/* 头部logo和菜单样式 */
+
+.header {
+    height: 100px;
+    line-height: 100px;
+    background-color: lightblue;
+}
+
+.header-logo {
+    width: 56px;
+    height: 56px;
+    background: url("../img/logo.png") no-repeat left top/100%;
+    padding-top: 56px;
+    overflow: hidden;
+    margin-top: 22px;
+}
+
+.header-menu {
+    margin-left: 172px;
+}
+
+.header-menu a {
+    margin: 0 7px;
+    font-size: 16px;
+}
