@@ -32,3 +32,45 @@
 .topnav-menu a:hover {
   color: #fff;
 }
+
+/* 购物车样式 */
+.topnav-cart {
+    position: relative;
+}
+
+.topnav-cart {
+    display: block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #424242;
+    cursor: pointer;
+    margin-left: 13px;
+}
+
+.topnav-cart:hover {
+    background-color: #fff;
+}
+
+.topnav-cart:hover a {
+    color: #ff6700;
+}
+
+.topnav-cart .cart-list {
+    width: 320px;
+    height: 100px;
+    border: 1px solid #ccc;
+    border-top: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    line-height: 100px;
+    text-align: center;
+    cursor: auto;
+    display: none;
+}
+
+.topnav-cart:hover .cart-list {
+    display: block;
+}
