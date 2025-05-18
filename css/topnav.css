@@ -9,7 +9,17 @@
 
 .topnav li {
     float: left;
-    margin: 0 7px;
+    margin-left: 7px;
+}
+
+.topnav li::after {
+    content: "";
+    border-right: 1px solid #424242;
+    margin-left: 7px;
+}
+
+.topnav li:last-child::after {
+    display: none;
 }
 
 .topnav a:hover {
