@@ -1,0 +1,32 @@
+/* 多个页面的公共样式 */
+
+/* 统一样式开始 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 统一样式结束 */
+
+/* 通用样式开始 */
+
+.container {
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+/* 通用样式结束 */
