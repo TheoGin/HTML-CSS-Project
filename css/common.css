@@ -1,20 +1,32 @@
 /* 多个页面的公共样式 */
 
-/* 统一样式开始 */
-
+/* 统一样式 */
 * {
   margin: 0;
   padding: 0;
+  list-style: none;
   box-sizing: border-box;
 }
 
-/* 统一样式结束 */
-
-/* 通用样式开始 */
-
-.container {
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
+a:hover {
+  color: #ff6700;
+}
+
+html {
+  color: #333;
+  /* 大部分PC端设计稿最小宽度 */
+  min-width: 1226px;
+  /* 速写属性，没有空格可以不用加引号 */
+  font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei",
+    "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+}
+
+/* 浮动处理 */
 .clearfix::after {
   content: "";
   display: block;
@@ -29,4 +41,9 @@
   float: right;
 }
 
-/* 通用样式结束 */
+/* 通用容器 */
+.container {
+  width: 1226px;
+  margin-left: auto;
+  margin-right: auto;
+}
