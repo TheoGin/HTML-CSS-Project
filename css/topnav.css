@@ -1,0 +1,22 @@
+/* 顶部导航样式 */
+.topnav {
+    height: 40px;
+    background-color: #333;
+    color: #b0b0b0;
+    font-size: 12px;
+    line-height: 40px;
+}
+
+.topnav li {
+    float: left;
+    margin: 0 7px;
+}
+
+.topnav a:hover {
+    color: #fff;
+}
+
+.topnav li:first-child {
+    margin-left: 0;
+}
+
