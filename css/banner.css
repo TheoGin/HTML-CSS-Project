@@ -88,7 +88,7 @@ span.banner-dots-selected {
   cursor: pointer;
 }
 
-.banner-menu > li:hover {
+.banner-menu > li:hover .banner-menu-item {
   background-color: #ff6700;
 }
 
@@ -102,9 +102,11 @@ span.banner-dots-selected {
   top: 0;
   left: 234px;
   width: 992px;
-  height: 460px;
+  /* height: 460px; */
+  /* 高度百分比相对于 绝对定位元素的相对父元素 */
+  height: 100%;
   background-color: #fff;
-  border: 1px solid #ccc;
+  border: 1px solid #eee;
   display: none;
 }
 
@@ -113,7 +115,9 @@ span.banner-dots-selected {
 }
 
 .banner-sub-menu a {
+  /* 可以不用算出具体的px，用百分比，浏览器可以帮你算出 */
   width: 25%;
+  /* 不要四舍五入，浏览器支持多为小数 */
   height: 16.666%;
   padding: 0 20px;
   padding-top: 12px;
