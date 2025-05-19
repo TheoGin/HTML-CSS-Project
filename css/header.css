@@ -105,20 +105,27 @@
     height: 50px;
     border: 1px solid #ccc;
     padding: 15px;
-    margin-right: -1px;
-}
-
-/* 鼠标移入文本框效果 */
-.header-search input:hover {
-    color: #aaa;
+    /* margin-right: -1px; */
 }
 
 .header-search input::placeholder {
     font-size: 16px;
 }
 
+/* ——————注意：input:hover和input:focus 的书写顺序—————— */
+/* 鼠标移入文本框效果 */
+.header-search input:hover {
+    border-color: #aaa;
+}
+
+.header-search input:hover~.header-search-icon {
+    border-color: #aaa;
+}
+
+
 .header-search input:focus {
-    border: 1px solid #ff6700;
+    /* border: 1px solid #ff6700; */
+    border-color: #ff6700;
     outline: none;
 }
 
@@ -128,6 +135,7 @@
     color: #616161;
     background-color: #fff;
     border: 1px solid #ccc;
+    border-left: none;
     cursor: pointer;
 }
 
@@ -138,20 +146,25 @@
 .header-search-icon:hover {
     background-color: #ff6700;
     color: #fff;
+    border-color: #ff6700;
 }
 
 .header-search input:focus~.header-search-icon {
-    border: 1px solid #ff6700;
+    /* border: 1px solid #ff6700; */
+    
+    border-color: #ff6700;
 }
 
 .header-search-suggest {
     border: 1px solid #ff6700;
+    /* margin-top: -1px; */
+    border-top: none;
     position: absolute;
     left: 0;
     top: 50px;
     width: 245px;
-    margin-top: -1px;
     display: none;
+    /* 定位元素，别忘了考虑z-index */
     z-index: 40;
     background-color: #fff;
 }
@@ -164,7 +177,9 @@
     display: block;
     height: 30px;
     line-height: 30px;
-    color: #333;
+    /* color: #333; */
+    /* 用继承，父元素改，子元素也跟着变 */
+    color: inherit;
     padding: 0 10px;
     font-size: 12px;
 }
