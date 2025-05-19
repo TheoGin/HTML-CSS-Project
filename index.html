@@ -63,9 +63,10 @@
     <!-- 头部logo和菜单区域开始 -->
     <header class="header">
       <div class="container clearfix">
-        <div class="fl header-logo">
+        <!-- logo是超链接，可以跳转，要用a元素 -->
+        <a href="" class="fl header-logo">
           <h1>小米商城</h1>
-        </div>
+        </a>
         <div class="fl header-menu">
           <a href="">小米手机</a>
           <a href="">红米手机</a>
@@ -78,8 +79,10 @@
           <a href="">社区</a>
         </div>
         <div class="fr header-search">
-          <!-- <input type="text" />
-          <i class="iconfont i-fangdajing"></i> -->
+          <input type="text" />
+          <button>
+            <i class="iconfont i-fangdajing"></i>
+          </button>
         </div>
       </div>
     </header>
