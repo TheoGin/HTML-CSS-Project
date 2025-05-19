@@ -11,9 +11,9 @@
 }
 
 .banner-cover img {
-  width: 100%;
-  height: 100%;
-  display: block;
+  width: 1226px;
+  height: 460px;
+  /* display: block; */
 }
 
 .banner-arrow {
@@ -41,7 +41,7 @@
   right: 0;
 }
 
-.banner-arrow:hover{
+.banner-arrow:hover {
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
 }
@@ -59,9 +59,81 @@
   margin: 0 4px;
   border-radius: 50%;
   border: 2px solid rgba(255, 255, 255, 0.3);
+  /* 左右箭头鼠标移动上去是小手 */
+  cursor: pointer;
 }
 
 span.banner-dots-selected {
   background-color: rgba(255, 255, 255, 0.3);
   border-color: rgba(0, 0, 0, 0.4);
+}
+
+/* 横幅菜单区域样式 */
+.banner-menu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(105, 101, 101, 0.6);
+  height: 100%;
+  width: 234px;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.banner-menu > li {
+  height: 42px;
+  line-height: 42px;
+  padding-left: 30px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.banner-menu > li:hover {
+  background-color: #ff6700;
+}
+
+.banner-menu > li:hover>a {
+  color: #fff;
+}
+
+/* 二级菜单样式 */
+.banner-sub-menu {
+  position: absolute;
+  top: 0;
+  left: 234px;
+  width: 992px;
+  height: 460px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  display: none;
+}
+
+.banner-menu > li:hover .banner-sub-menu {
+  display: block;
+}
+
+.banner-sub-menu a {
+  width: 25%;
+  height: 16.666%;
+  padding: 0 20px;
+  padding-top: 12px;
+  color: #333;
+}
+
+.banner-sub-menu a img {
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+}
+
+
+.banner-sub-menu a span {
+  width: 154px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.banner-sub-menu a:hover {
+    color: #ff6700;
 }
