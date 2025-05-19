@@ -1,33 +1,37 @@
 /* 头部logo和菜单样式 */
 
 .header {
-    height: 100px;
-    line-height: 100px;
-    /* background-color: lightblue; */
+  height: 100px;
+  /* line-height: 100px; */
+  /* background-color: lightblue; */
 }
 
 .header-logo {
-    width: 56px;
-    height: 56px;
-    /* background: url("../img/logo.png") no-repeat left top/100%; */
-    background: url("../img/logo.png");
-    background-size: 56px 56px;
-    /* padding-top: 56px;
+  width: 56px;
+  height: 56px;
+  /* background: url("../img/logo.png") no-repeat left top/100%; */
+  background: url("../img/logo.png");
+  background-size: 56px 56px;
+  /* padding-top: 56px;
     overflow: hidden; */
-    margin-top: 22px;
+  margin-top: 22px;
 }
 
 .header-logo h1 {
-    display: none;
+  display: none;
 }
 
 .header-menu {
-    margin-left: 172px;
+  margin-left: 172px;
 }
 
 .header-menu a {
-    /* margin: 0 7px; */
-    /* 用padding好一些，不然用户需要精准指中 */
-    padding: 0 7px;
-    font-size: 16px;
+  /* margin: 0 7px; */
+  /* 用padding好一些，不然用户需要精准指中 */
+  padding: 0 7px;
+  font-size: 16px;
+  /* 高度不能设置百分比，因为父元素header-menu没有高度 */
+  /* height: 100%; */
+  height: 100px;
+  line-height: 100px;
 }
