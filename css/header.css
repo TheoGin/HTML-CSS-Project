@@ -108,6 +108,7 @@
     margin-right: -1px;
 }
 
+/* 鼠标移入文本框效果 */
 .header-search input:hover {
     color: #aaa;
 }
@@ -151,6 +152,8 @@
     width: 245px;
     margin-top: -1px;
     display: none;
+    z-index: 40;
+    background-color: #fff;
 }
 
 .header-search input:focus~.header-search-suggest {
