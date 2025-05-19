@@ -9,10 +9,16 @@
 .header-logo {
     width: 56px;
     height: 56px;
-    background: url("../img/logo.png") no-repeat left top/100%;
-    padding-top: 56px;
-    overflow: hidden;
+    /* background: url("../img/logo.png") no-repeat left top/100%; */
+    background: url("../img/logo.png");
+    background-size: 56px 56px;
+    /* padding-top: 56px;
+    overflow: hidden; */
     margin-top: 22px;
+}
+
+.header-logo h1 {
+    display: none;
 }
 
 .header-menu {
@@ -20,6 +26,8 @@
 }
 
 .header-menu a {
-    margin: 0 7px;
+    /* margin: 0 7px; */
+    /* 用padding好一些，不然用户需要精准指中 */
+    padding: 0 7px;
     font-size: 16px;
 }
