@@ -51,10 +51,14 @@
     display: none;
 }
 
-.header-menu>a:hover~.header-submenu {
+/* .header-menu>a:hover~.header-submenu {
     display: block;
 }
 .header-submenu:hover {
+    display: block;
+} */
+ /* hover到整个菜单显示二级菜单 */
+ .header-menu:hover .header-submenu {
     display: block;
 }
 
