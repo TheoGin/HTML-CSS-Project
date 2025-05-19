@@ -55,8 +55,10 @@
   margin-left: 3px;
 }
 
-.topnav-car:hover a {
+.topnav-car:hover .topnav-link {
   background-color: #fff;
+  /* 解决鼠标移到topnav-car-detail，链接没有颜色的问题 */
+  color: #ff6700;
 }
 
 .topnav-car .topnav-car-detail {
