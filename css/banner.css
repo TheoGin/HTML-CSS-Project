@@ -25,6 +25,8 @@
   position: absolute;
   top: 50%;
   margin-top: -35px;
+  /* 左右箭头鼠标移动上去是小手 */
+  cursor: pointer;
 }
 
 .banner-arrow .iconfont {
