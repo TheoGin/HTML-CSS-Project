@@ -1,9 +1,10 @@
-/* 头部logo和菜单样式 */
+/* 页头logo和菜单样式 */
 
 .header {
   height: 100px;
   /* line-height: 100px; */
   /* background-color: lightblue; */
+  position: relative;
 }
 
 .header-logo {
@@ -25,7 +26,7 @@
   margin-left: 172px;
 }
 
-.header-menu a {
+.header-menu>a {
   /* margin: 0 7px; */
   /* 用padding好一些，不然用户需要精准指中 */
   padding: 0 7px;
@@ -34,4 +35,54 @@
   /* height: 100%; */
   height: 100px;
   line-height: 100px;
+}
+
+.header-submenu {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    padding: 30px 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+    z-index: 51;
+    display: none;
+}
+
+.header-menu>a:hover~.header-submenu {
+    display: block;
+}
+
+.header-submenu a {
+    width: 204px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.header-cover {
+    width: 160px;
+    height: 100px;
+    border-right: 1px solid #eee;
+    margin: 0 auto;
+}
+
+.header-submenu a:last-child .header-cover {
+    border-right: none;
+}
+
+.header-cover img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.header-title {
+    color: #333;
+    margin-top: 10px;
+}
+
+.header-price {
+    color: #ff6700;
 }
