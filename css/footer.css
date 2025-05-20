@@ -7,6 +7,8 @@
   /* 不要设置父元素行高，可以通过padding控制垂直方向上的居中，方便设置 短边框 */
   padding: 27px 0;
   border-bottom: 1px solid #e0e0e0;
+  /* a元素的颜色用继承，就不需要重新写hover */
+  color: #616161;
 }
 
 .footer-top a {
@@ -15,15 +17,17 @@
   /* 给a元素设置高度，会导致a元素一行没有居中在设置一个行高即可 */
   line-height: 20px;
   text-align: center;
-  color: #616161;
+  /* a元素的颜色用继承，就不需要重新写hover */
+  /* color: #616161; */
   position: relative;
   font-size: 16px;
   border-right: 1px solid #e0e0e0;
 }
 
-.footer-top a:hover {
+/* a元素的颜色用继承，就不需要重新写hover */
+/* .footer-top a:hover {
   color: #ff6700;
-}
+} */
 
 /* 可以不用伪元素 */
 /* .footer-top a::after {
@@ -51,6 +55,8 @@
 
 .footer-links {
   width: 160px;
+  /* a元素的颜色用继承，就不需要重新写hover */
+  color: #757575;
 }
 
 .footer-links h3 {
@@ -63,13 +69,15 @@
 .footer-links a {
   display: block;
   font-size: 12px;
-  color: #757575;
+  /* a元素的颜色用继承，就不需要重新写hover */
+  /* color: #757575; */
   margin-top: 10px;
 }
 
-.footer-links a:hover {
+/* a元素的颜色用继承，就不需要重新写hover */
+/* .footer-links a:hover {
   color: #ff6700;
-}
+} */
 
 .footer-contact-me {
   width: 245px;
