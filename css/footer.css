@@ -2,35 +2,42 @@
 
 .footer-top {
   height: 75px;
-  line-height: 75px;
+  /* line-height: 75px; */
   /* padding: 27px 0; */
+  /* 不要设置父元素行高，可以通过padding控制垂直方向上的居中，方便设置 短边框 */
+  padding: 27px 0;
   border-bottom: 1px solid #e0e0e0;
 }
 
 .footer-top a {
   width: 20%;
+  height: 20px;
+  /* 给a元素设置高度，会导致a元素一行没有居中在设置一个行高即可 */
+  line-height: 20px;
   text-align: center;
   color: #616161;
   position: relative;
   font-size: 16px;
+  border-right: 1px solid #e0e0e0;
 }
 
-.footer-top  a:hover {
+.footer-top a:hover {
   color: #ff6700;
 }
 
-.footer-top a::after {
+/* 可以不用伪元素 */
+/* .footer-top a::after {
   content: "";
   position: absolute;
   top: 27px;
   right: 0;
   width: 1px;
   height: 20px;
-  border-right: 1px solid #e0e0e0;
-}
+  background-color: #e0e0e0;
+} */
 
-.footer-top a:last-child::after {
-  content: none;
+.footer-top a:last-child {
+  border-right: none;
 }
 
 .footer-top .iconfont {
@@ -82,28 +89,28 @@
 }
 
 .footer-staff-service {
-    display: block;
-    width: 118px;
-    height: 30px;
-    line-height: 30px;
-    color: #ff6700;
-    margin: 7px auto;
-    border: 1px solid #ff6700;
+  display: block;
+  width: 118px;
+  height: 30px;
+  line-height: 30px;
+  color: #ff6700;
+  margin: 7px auto;
+  border: 1px solid #ff6700;
 }
 
 .footer-staff-service .iconfont {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .footer-staff-service:hover {
-    background-color: #ff6700;
-    color: #fff;
+  background-color: #ff6700;
+  color: #fff;
 }
 
 .footer-contact-way span {
-    vertical-align: 3px;
+  vertical-align: 3px;
 }
 
 .footer-contact-way .iconfont {
-    font-size: 20px;
+  font-size: 20px;
 }
