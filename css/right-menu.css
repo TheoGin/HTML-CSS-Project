@@ -1,34 +1,75 @@
-/* 右侧菜单 */
+/* 右侧固定菜单 */
 .rm {
-    position: fixed;
-    right: 0;
-    bottom: 70px;
-    z-index: 100;
+  position: fixed;
+  right: 0;
+  bottom: 70px;
+  /* 固定菜单三位数 */
+  z-index: 999;
 }
 
 .rm-item {
-    display: block;
-    width: 84px;
-    height: 92px;
-    background-color: #fff;
-    border: 1px solid #f5f5f5;
-    /* 边框会重叠 */
-    border-top: none;
-    color: #757575;
-    text-align: center;
-    padding-top: 15px;
+  display: block;
+  width: 84px;
+  height: 92px;
+  background-color: #fff;
+  border: 1px solid #f5f5f5;
+  /* 边框会重叠 */
+  border-top: none;
+  color: #757575;
+  text-align: center;
+  padding-top: 14px;
 }
 
-.rm-item:first-child {
-    border-top: 1px solid #f5f5f5;
+.rm-item:first-child,
+.rm-to-top {
+  border-top: 1px solid #f5f5f5;
 }
 
 .rm-to-top {
-    border-top: 1px solid #f5f5f5;
-    margin-top: 18px;
+  /* border-top: 1px solid #f5f5f5; */
+  margin-top: 18px;
 }
 
 .rm-item .iconfont {
-    font-size: 30px;
+  font-size: 30px;
+  display: block;
+}
+
+/* 弹出菜单 */
+.rm-mention {
+  position: absolute;
+  right: 90px;
+  top: 0;
+  background-color: #fff;
+  border: 1px solid #f5f5f5;
+  padding: 14px;
+  display: none;
+}
+
+.rm-item:first-child:hover .rm-mention  {
     display: block;
+}
+
+.rm-mention img {
+  width: 100px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.rm-mention p {
+  color: #333;
+}
+
+.rm-mention::after {
+  content: "";
+  position: absolute;
+  right: -5px;
+  top: 40px;
+  width: 9px;
+  height: 9px;
+  background-color: #fff;
+  transform: rotate(45deg);
+  border: 1px solid #f5f5f5;
+  border-left: none;
+  border-bottom: none;
 }
