@@ -24,6 +24,7 @@
 .sc-top {
   height: 58px;
   line-height: 58px;
+  /* outline: 1px solid; */
 }
 
 .sc-title {
@@ -33,13 +34,16 @@
 
 .sc-more .iconfont::before {
   font-size: 12px;
-  /* display: inline-block;
-    width: 20px;
-    height: 20px; */
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  /* 行高问题，图标背景高度只有20px，但是总的行高是 58px，重新设置行高即可解决 */
+  line-height: 20px;
+  text-align: center;
   background-color: #aaa;
   color: #fff;
   border-radius: 50%;
-  padding: 5px;
+  /* padding: 5px; */
   margin-left: 3px;
 }
 
@@ -47,15 +51,20 @@
   background-color: #ff6700;
 }
 
-.sc-item-first img {
+.sc-item-first {
   width: 234px;
   height: 614px;
-  margin-right: 14px;
+}
+
+.sc-item-first img {
+    /* img元素设置百分比，如果父元素是行盒，会跟定位元素一样，找到第一个块盒 */
+  width: 100%;
+  height: 100%;
 }
 
 .sc-item-list {
   width: 978px;
-  height: 614px;
+  /* height: 614px; */
 }
 
 .sc-item {
