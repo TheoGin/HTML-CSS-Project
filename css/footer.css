@@ -1,0 +1,109 @@
+/* 页脚区域 */
+
+.footer-top {
+  height: 75px;
+  line-height: 75px;
+  /* padding: 27px 0; */
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.footer-top a {
+  width: 20%;
+  text-align: center;
+  color: #616161;
+  position: relative;
+  font-size: 16px;
+}
+
+.footer-top  a:hover {
+  color: #ff6700;
+}
+
+.footer-top a::after {
+  content: "";
+  position: absolute;
+  top: 27px;
+  right: 0;
+  width: 1px;
+  height: 20px;
+  border-right: 1px solid #e0e0e0;
+}
+
+.footer-top a:last-child::after {
+  content: none;
+}
+
+.footer-top .iconfont {
+  font-size: 26px;
+  vertical-align: -5px;
+}
+
+.footer-bottom {
+  padding: 40px 0;
+}
+
+.footer-links {
+  width: 160px;
+}
+
+.footer-links h3 {
+  font-size: 14px;
+  font-weight: normal;
+  color: #424242;
+  margin-bottom: 17px;
+}
+
+.footer-links a {
+  display: block;
+  font-size: 12px;
+  color: #757575;
+  margin-top: 10px;
+}
+
+.footer-links a:hover {
+  color: #ff6700;
+}
+
+.footer-contact-me {
+  width: 245px;
+  border-left: 1px solid #e0e0e0;
+  text-align: center;
+  font-size: 12px;
+  color: #616161;
+}
+
+.footer-phone-num {
+  font-size: 22px;
+  color: #ff6700;
+}
+
+.footer-phone-desc {
+  /* margin: 5px 0; */
+}
+
+.footer-staff-service {
+    display: block;
+    width: 118px;
+    height: 30px;
+    line-height: 30px;
+    color: #ff6700;
+    margin: 7px auto;
+    border: 1px solid #ff6700;
+}
+
+.footer-staff-service .iconfont {
+    font-size: 14px;
+}
+
+.footer-staff-service:hover {
+    background-color: #ff6700;
+    color: #fff;
+}
+
+.footer-contact-way span {
+    vertical-align: 3px;
+}
+
+.footer-contact-way .iconfont {
+    font-size: 20px;
+}
