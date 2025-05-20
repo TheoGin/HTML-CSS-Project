@@ -48,8 +48,8 @@
   display: none;
 }
 
-.rm-item:first-child:hover .rm-mention  {
-    display: block;
+.rm-item:first-child:hover .rm-mention {
+  display: block;
 }
 
 .rm-mention img {
@@ -61,6 +61,7 @@
 .rm-mention p {
   color: #333;
 }
+
 
 .rm-mention::after {
   content: "";
@@ -75,3 +76,15 @@
   border-left: none;
   border-bottom: none;
 }
+
+/* 不用c3，没办法设置边框，很麻烦 */
+/* border-color: red blue green lightblue; */
+/* .rm-mention::after {
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: 40px;
+  border: 9px solid;
+  border-color: transparent;
+  border-left-color: #fff;
+} */
