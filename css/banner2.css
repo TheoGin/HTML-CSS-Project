@@ -1,0 +1,66 @@
+/* 横幅 2 */
+
+.banner2 {
+  margin-top: 14px;
+  margin-bottom: 26px;
+}
+
+.banner2-service {
+  width: 234px;
+  background-color: #5f5750;
+  color: #ccc;
+  padding: 3px;
+  font-size: 12px;
+  margin-right: 14px;
+}
+
+.banner2-service .iconfont {
+  display: block;
+  font-size: 26px;
+  /* margin-bottom: 5px; */
+}
+
+.banner2-service a:hover {
+  color: #fff;
+}
+
+.banner2-service a {
+  width: 76px;
+  height: 82px;
+  text-align: center;
+  padding-top: 10px;
+  position: relative;
+}
+
+.banner2-service a:not(:nth-child(3n + 1))::before {
+  content: "";
+  width: 1px;
+  height: 70px;
+  background-color: #665e57;
+  position: absolute;
+  top: 6px;
+  left: 0;
+}
+
+.banner2-service a:nth-child(n + 4)::after {
+  content: "";
+  width: 64px;
+  height: 1px;
+  background-color: #665e57;
+  position: absolute;
+  top: 0;
+  left: 6px;
+}
+
+.banner2-item {
+    margin-right: 15px;
+}
+
+.banner2-item:last-child {
+    margin-right: 0;
+}
+
+.banner2-item img {
+    width: 316px;
+    height: 170px;
+}

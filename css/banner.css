@@ -88,7 +88,7 @@ span.banner-dots-selected {
   cursor: pointer;
 }
 
-.banner-menu > li:hover .banner-menu-item {
+.banner-menu > li:hover {
   background-color: #ff6700;
 }
 
