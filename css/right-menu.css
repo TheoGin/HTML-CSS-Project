@@ -1,0 +1,27 @@
+/* 右侧菜单 */
+.rm {
+    position: fixed;
+    right: 0;
+    bottom: 70px;
+    z-index: 100;
+}
+
+.rm-item {
+    display: block;
+    width: 84px;
+    height: 92px;
+    background-color: #fff;
+    border: 1px solid #f5f5f5;
+    color: #757575;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.rm-item .iconfont {
+    font-size: 30px;
+    display: block;
+}
+
+.backtop {
+    margin-top: 18px;
+}
