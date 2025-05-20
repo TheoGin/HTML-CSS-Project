@@ -18,6 +18,8 @@
   color: #757575;
   text-align: center;
   padding-top: 14px;
+  /* 相对于a元素定位 */
+  position: relative;
 }
 
 .rm-item:first-child,
