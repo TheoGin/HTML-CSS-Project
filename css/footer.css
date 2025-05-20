@@ -104,7 +104,8 @@
   color: #ff6700;
   margin: 7px auto;
   /* 设置了文字颜色，边框可以省略 */
-  border: 1px solid ;
+  border: 1px solid;
+  /* border: 1px solid #ff6700; */
 }
 
 .footer-staff-service .iconfont {
@@ -122,4 +123,9 @@
 
 .footer-subscribe .iconfont {
   font-size: 20px;
+  cursor: pointer;
+}
+
+.footer-subscribe .iconfont:hover {
+  color: #ff6700;
 }
